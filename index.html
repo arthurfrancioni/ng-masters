@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Exercicio 01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Aula 01</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Exercicio 01</a></li>
+                        <li><a href="#about">Exercicio 02</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">Exercício Closure</div>
+                <div class="panel-body">
+
+                    <div class="form-group">
+                        <label for="Usuario ">Usuário</label>
+                        <input type="text" value="freedomsponsors" class="form-control" id="usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="Repositorio">Repositório</label>
+                        <input type="text" value="www.freedomsponsors.org" class="form-control" id="repositorio">
+                    </div>
+                    <button type="submit" onclick="buscarIssues()" class="btn btn-success">Buscar issues</button>
+
+                    <table id="issuestable" style="margin-top: 15px;" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Número</th>
+                                <th>Título</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Nenhum registro encontrado!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ex01.js"></script>
+    </body>
+</html>
